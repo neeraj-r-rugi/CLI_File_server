@@ -19,7 +19,7 @@ CLI Server is a simple HTTP file server that allows you to quickly share files f
 
 1. Clone or download this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/neeraj-r-rugi/CLI_File_server
 cd cli_server
 ```
 
@@ -65,6 +65,18 @@ Run the server without any authentication (use with caution):
 python main.py --no-password
 # or using short form
 python main.py -no
+```
+
+#### Custom Port
+
+Run the server on a different port (default is 8888):
+```bash
+python main.py --port 9000
+# or using short form
+python main.py -po 9000
+
+# Combine with other options
+python main.py --port 9000 --password mypass
 ```
 
 ## Accessing Files
@@ -181,7 +193,10 @@ The executable will be in the `dist/` directory.
 ## Troubleshooting
 
 ### Port Already in Use
-If port 8888 is already in use, you can modify the port in [main.py](main.py#L57) (line 57).
+If port 8888 is already in use, you can specify a different port:
+```bash
+python main.py --port 9000
+```
 
 ### Connection Refused
 - Ensure your firewall allows connections on port 8888

@@ -44,6 +44,11 @@ def init_parser() -> argparse.ArgumentParser:
         default="dingus",
         help="Password required to access files"
     )
+    parser.add_argument(
+        "--port","-po",
+        default=8888,
+        help="Port to run the server on"
+    )
     return parser
 
 
@@ -60,7 +65,7 @@ def main():
     else:
         print("Authentication DISABLED")
 
-    app.run(host="0.0.0.0", port=8888)
+    app.run(host="0.0.0.0", port=int(args.port))
 
 
 if __name__ == "__main__":
