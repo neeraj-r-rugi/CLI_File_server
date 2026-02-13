@@ -10,9 +10,9 @@ CLI Server is a simple HTTP file server that allows you to quickly share files f
 
 -  **Simple Setup** - Start serving files with a single command
 -  **Optional Authentication** - Built-in HTTP Basic Authentication support
-- 🌐 **Network Accessible** - Binds to all network interfaces (0.0.0.0) for easy access
+-  **Network Accessible** - Binds to all network interfaces (0.0.0.0) for easy access
 -  **Directory Traversal Protection** - Prevents access to files outside the base directory
-- 🔧 **Configurable** - Customizable password or no-password mode
+-  **Configurable** - Customizable password or no-password mode
 -  **wget Compatible** - Designed to work seamlessly with wget and curl
 
 ## Installation
